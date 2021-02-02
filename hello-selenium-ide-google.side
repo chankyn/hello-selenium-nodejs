@@ -1,0 +1,118 @@
+{
+  "id": "7c8a23ad-6899-42b1-831d-913dfd17dde5",
+  "version": "2.0",
+  "name": "hello-selenium-ide-google",
+  "url": "https://www.google.es",
+  "tests": [{
+    "id": "115d27f3-2c80-4939-bbeb-970cc7e1a2c8",
+    "name": "hello-google",
+    "commands": [{
+      "id": "8ed14535-7fee-4808-9fc9-ed19f1ef6e8f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d81296dc-a424-4ab9-bec8-ad2877a75fb2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1183x807",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbedc95e-6b7c-4b10-9102-133ec3fbd128",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc114878-0880-4712-a2d7-358208e6b19c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#introAgreeButton .RveJvd",
+      "targets": [
+        ["css=#introAgreeButton .RveJvd", "css:finder"],
+        ["xpath=//div[@id='introAgreeButton']/span/span", "xpath:idRelative"],
+        ["xpath=//form/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33cfef3c-36c2-40d8-a2f4-4419a06367f5",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d45e697-2587-4f36-8357-9f770d6e00af",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce42a308-7d49-40b2-9e71-23c44b2a07c7",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "devops"
+    }, {
+      "id": "fc486d56-a4c7-4cad-889d-80cc2dd2f9ee",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "934b9c90-729b-47e1-8a2c-392779afdd68",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Conocimientos de DevOps",
+      "targets": [
+        ["linkText=Conocimientos de DevOps", "linkText"],
+        ["css=.fCBnFe:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Conocimientos de DevOps')]", "xpath:link"],
+        ["xpath=//div[@id='tads']/div/div/div/div[3]/div/h3/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiXneWZyMvuAhUY6-0KHUcbBPcYABABGgJkZw&ohost=www.google.es&cid=CAASEuRoFuBzlWCSzORyrfd8I6ELjA&sig=AOD64_020HP8swnmrqd3UsHMHEf6qL1YhA&q=&ved=2ahUKEwil4N-ZyMvuAhUHCsAKHSx3AvUQqyQoAHoECB4QEQ&adurl=')]", "xpath:href"],
+        ["xpath=//h3/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Conocimientos de DevOps')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "80c5a39f-35cd-4b8c-be00-6c9bcab57f79",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["115d27f3-2c80-4939-bbeb-970cc7e1a2c8"]
+  }],
+  "urls": ["https://www.google.es/"],
+  "plugins": []
+}

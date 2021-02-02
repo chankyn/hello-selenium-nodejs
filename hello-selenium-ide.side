@@ -1,0 +1,192 @@
+{
+  "id": "bb9c0820-7013-4512-922d-128b02a83acf",
+  "version": "2.0",
+  "name": "hello-selenium-ide",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "410f607a-8316-4269-9aad-32284e608c6c",
+    "name": "stackoverflow",
+    "commands": [{
+      "id": "b7df63d8-13e0-412a-8dcd-2329f2eb8e93",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5281e03-a4fa-497a-aca4-e810ab649c7b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1163x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d65eda94-21bd-4d36-b347-d56923bfd7bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.top-bar > .wmx12",
+      "targets": [
+        ["css=.top-bar > .wmx12", "css:finder"],
+        ["xpath=//header/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4a8efd2-af28-4f63-91c3-dda327c7cbcf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iconSearch:nth-child(1) > path",
+      "targets": [
+        ["css=.iconSearch:nth-child(1) > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "47ad1b35-1fad-49ee-9cf5-993ecc15d109",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.s-input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "2f28b473-104f-4779-b634-a578de5f4c58",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.s-input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a6cb1875-9aa5-4fff-9ef1-a919b1beda03",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=How to download a file on clicking a button element?",
+      "targets": [
+        ["linkText=How to download a file on clicking a button element?", "linkText"],
+        ["css=#question-summary-66011501 .question-hyperlink", "css:finder"],
+        ["xpath=//a[contains(text(),'How to download a file on clicking a button element?')]", "xpath:link"],
+        ["xpath=//div[@id='question-summary-66011501']/div[2]/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/questions/66011501/how-to-download-a-file-on-clicking-a-button-element')]", "xpath:href"],
+        ["xpath=//div[2]/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'How to download a file on clicking a button element?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "afc12acd-cc60-476c-b85b-8f53a72abc79",
+    "name": "imdb-wandavision",
+    "commands": [{
+      "id": "36c6d4bb-b581-4649-b002-b77c56d0fe44",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc656d5c-d4e1-4962-88bb-58c19ecca1b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1421x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cec0e31-80f8-4fbd-b1a7-9aecc3718954",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da0ba035-896e-426d-87ac-6ac8adb980b7",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "wandavision"
+    }, {
+      "id": "75f6a068-53b4-4bb8-801c-f07c120bb85b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b722a1a5-a67e-4214-b3d4-dc3475381a33",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=WandaVision",
+      "targets": [
+        ["linkText=WandaVision", "linkText"],
+        ["css=.findSection:nth-child(3) .findResult:nth-child(1) > .result_text > a", "css:finder"],
+        ["xpath=//a[contains(text(),'WandaVision')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt9140560/?ref_=fn_al_tt_1')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'WandaVision')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed862422-4d41-4e78-9971-4d1631bac18a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,285)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ffd4ab8-a4e7-4957-b6ef-9fbd88df1919",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TRIVIA",
+      "targets": [
+        ["linkText=TRIVIA", "linkText"],
+        ["css=.quicklink:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'TRIVIA')]", "xpath:link"],
+        ["xpath=//div[@id='quicklinksMainSection']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/title/tt9140560/trivia?ref_=tt_ql_2')]", "xpath:href"],
+        ["xpath=//div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'TRIVIA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4f53f83b-417f-4291-b381-b031b3870569",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["afc12acd-cc60-476c-b85b-8f53a72abc79"]
+  }],
+  "urls": ["https://stackoverflow.com/", "https://www.imdb.com/"],
+  "plugins": []
+}
