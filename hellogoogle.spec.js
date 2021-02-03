@@ -6,6 +6,7 @@ describe('hello-google', function() {
   this.timeout(30000)
   let driver
   let vars
+
   beforeEach(async function() {
     driver = await new Builder().forBrowser('firefox').build()
     vars = {}
@@ -14,42 +15,19 @@ describe('hello-google', function() {
     await driver.quit();
   })
   it('hello-google', async function() {
-    // Test name: hello-google
-    // Step # | name | target | value
-    // 1 | open | / | 
-    await driver.get("https://www.google.es/")
-    // 2 | setWindowSize | 1183x807 | 
-    await driver.manage().window().setRect(1183, 807)
-    // 3 | selectFrame | index=0 | 
-    await driver.switchTo().frame(0)
-    // 4 | click | css=#introAgreeButton .RveJvd | 
-    await driver.findElement(By.id("introAgreeButton")).click()
-    // 5 | selectFrame | relative=parent | 
-    await driver.switchTo().defaultContent()
-    // 6 | click | name=q | 
-    await driver.findElement(By.name("q")).click()
-    // 7 | type | name=q | devops
-    await driver.findElement(By.name("q")).sendKeys("devops")
-    // 8 | sendKeys | name=q | ${KEY_ENTER}
-    await driver.findElement(By.name("q")).sendKeys(Key.ENTER)
-  })
+      await driver.get('https://www.google.com/');
+
+    let frame = await findElement(By.xpath('//iframe'));
+    if(frame){
+      await driver.switchTo().frame(frame);
+
+      let button = await driver.wait(until.elementLocated(By.id('introAgreeButton')),5000);
+     await button.click();
+    }
+    
+
+    await driver.switchTo().defaultContent();
+    await driver.findElement(By.name('q')).sendKeys('devops', Key.RETURN);
+  });
 })
 
-function add() {
-  return Array.prototype.slice.call(arguments).reduce(function(prev, curr) {
-    return prev + curr;
-  }, 0);
-}
-describe('add()', function() {
-  var tests = [
-    {args: [1, 2], expected: 3},
-    {args: [1, 2, 3], expected: 6},
-    {args: [1, 2, 3, 4], expected: 10}
-  ];
-
-  tests.forEach(function(test) {
-    it('correctly adds ' + test.args.length + ' args', function() {
-      var res = add.apply(null, test.args);
-    });
-  });
-});
