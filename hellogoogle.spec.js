@@ -17,7 +17,7 @@ describe('hello-google', function() {
   it('hello-google', async function() {
       await driver.get('https://www.google.com/');
 
-    let frame = await findElement(By.xpath('//iframe'));
+    let frame = await driver.findElement(By.xpath('//iframe'));
     if(frame){
       await driver.switchTo().frame(frame);
 
